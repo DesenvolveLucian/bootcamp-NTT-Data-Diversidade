@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Desafio HTML - NTT DATA Diversidade em Tech </title>
+</head>
+<body>
+    <h1 id="indice"> Introdução ao HTML na prática</h1>
+    <hr>
+    <h2>Índice</h2>
+    <ul>
+        <strong>
+            <li><a href="#ferramentas"> Aula 01 - Ferramentas utilizadas</a></li>
+            <li><a href="#inspetor"> Aula 02 - Inspetor de elementos</a></li>
+            <li><a href="#estrutura"> Aula 03 - Estrutura básica do HTML</a></li>
+            <li><a href="#falando"> Aula 04 - Falando sobre Tags</a></li>
+            <li><a href="#atributos"> Aula 05 - Atributos das Tags</a></li>
+            <li><a href="#textos"> Aula 06 - Textos</a></li>
+            <li><a href="#listas"> Aula 07 - Listas Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links"> Aula 08 - Links</a></li>
+            <li><a href="#referencias"> Referências bibliográficas</a></li>
+        </strong>
+    </ul>
+    <hr>
+    <h3 id="ferramentas"> Aula 01 - Ferramentas Utilizadas</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        Antes de darmos início a nossa jornada de aprendizado de HTML, devemos instalar em nossos computadores
+        algumas importantes ferramentas que irão auxiliar nosso desenvolvimento prático ao longo do curso.
+        Dirija-se à página <a href="https://code.visualstudio.com/Download">Visual Studio Code</a>, baixe a versão compatível
+        com seu sistema operacional e instale o software.
+    </p>
+    <p>
+        O Visual Studio Code, também chamado de VSCode, possui diversas funcionalidades, dentre elas, ele nos permite escrever documentos HTML, o que será útil para aplicação prática do aprendizado. O programa possui uma ampla biblioteca de extensões e para este curso utilzaremos a extensão Live Server, disponível na aba "Extensões". A extensão lança um servidor de desenvolvimento local, acessível via navegador, que possui recurso de recarregamento automático da página a cada vez que salvamos uma alteração no nosso documento. Com essas ferramentas, estamos prontos para o início de nossos estudos.
+    </p>
+
+    <h3 id="inspetor"> Aula 02 - Inspetor de Elementos</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        O inspetor de elementos é uma ferramenta de desenvolvimento disponível em diversos navegadores, para acessá-lo basta abrir o navegador e pressionar a tecla F12 do teclado, ou utilizar o atalho ctrl + shift + i, ou também podemos acessá-lo clicando nos três pontos horizontais localizados no canto superior direito ao lado da barra de endereços do navegador, navegar até "Mais ferramentas" e em seguida clicar em "Ferramentas  do desenvolvedor" (caso esteja utilizando o google chrome).
+    </p>
+    <p>
+        Esta ferramenta disponibiliza um console com diversas funcionalidades, dentre elas a de inspecionar elementos na página. Selecionando o inspetor de elementos e em seguida passando o mouse sobre um elemento da página, podemos ver em destaque o HTML correspondente bem como o CSS utilizado. Podemos realizar alterações pontuais nos elementos que não atualizam o código da página, mas nos permitem ver as alterações realizadas em tela, até que recarreguemos a página. 
+    </p>
+
+    <h3 id="estrutura"> Aula 03 - Estrutura Básica do HTML</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        A estrutura básica de um documento HTML é composta de basicamente três partes:
+        <ol>
+           <li><strong>Tag HTML</strong> - Indica que tudo que está entre a tag de abertura e de fechamento é um documento HTML.</li>
+            <li><strong>Tag Head</strong> - Onde colocamos as informações que serão carregadas antes de serem entregues ao usuário, contém instruções e dados da página, também é a área onde damos título à nossa página. </li>
+            <li><strong>Tag Body</strong> - É o corpo do documento, onde desenvolvemos tudo que aparecerá na tela para o usuário.</li>
+        </ol>
+    </p>
+
+    <h3 id="falando"> Aula 04 - Falando sobre Tags</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        As tags podem ser utilziadas para formatarmos o texto de uma página. Existem diversas tags, com diversas finalidades, abaixo citaremos alguns exemplos:
+        <ul>
+            <li> <strong>Tag i</strong> - <i>A tag i aplica o formato itálico para o texto colocado entre sua abertura e fechamento, como este que você está lendo agora.</i></li>
+            <li> <strong>Tag strong</strong> - <strong>A tag strong aplica o aspecto negrito ao texto, como observável nesta frase.</strong></li>
+            <li> <strong>Tag del</strong> - A tag del indica texto deletado (<del>aplicando um riscado sobre o texto, como nesse parênteses</del>).</li>
+        </ul>
+    </p>
+    <p>
+        <strong><i>Podemos fazer uso de tags de forma aninhada, onde utilizamos uma tag dentro da outra, gerando mais de um efeito no texto ao mesmo tempo, como o texto deste parágrafo que encontra-se em negrito e itálico.</i></strong>
+    </p>
+    <p>
+        Para finalizarmos essa aula, vale destacar que algumas tags não possuem fechamento, tendo abertura e fechamento em uma única tag, como por exemplo a tag input, a tag img, dentre outras.
+    </p>
+
+    <h3 id="atributos"> Aula 05 - Atributos das Tags</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        Atributos são propriedades que as tags possuem que as modificam. Existem atributos gerais, que são comuns a todas as tags e atributos específicos de cada tag.
+    </p>
+    <p>
+        Exemplos de alguns atributos comuns:
+        <ul>
+            <li> <strong>id</strong> - o atributo id serve para identifcarmos aquela tag, podendo a tag ser reconhecida no Javascript a partir desse identificador, sinalizando para o Javascript onde ele irá mexer.</li>
+            <li> <strong>style</strong> - o atributo style é utilizado para se aplicar comandos css diretamente ao elemento que o contenha.</li>
+            <li> <strong>class</strong> - outro atributo voltado para o css. O nome dado a class serve como indicador para que o css realize alterações onde encontrar esse atributo com o nome escolhido.</li>
+        </ul>
+    </p>
+    <p>
+        Para finalizar, vejamos agora alguns atributos específicos:
+        <ul>
+            <li> <strong>type</strong> - a tag input, que gera um campo na página, possui este atributo, o qual indica o tipo daquele campo, que será textual, se será para inserção apenas de valores numéricos, dentre outros, podendo até mesmo delimitar o cmapo como um seletor de cor.</li>
+            <li> <strong>src</strong> - a tag img, utilizada para acréscimo de imagens ao documento, possui o atributo src que indica a fonte de onde se busca a imagem, para que ela seja gerada na página, seja através de um link remoto ou mesmo de um arquivo localizado em nossa máquina.</li>
+        </ul>
+    </p>
+
+    <h3 id="textos"> Aula 06 - Textos</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        Falaremos de algumas (somente algumas mesmo, são inúmeras) tags específicas para texto.
+        <ol>
+            <li><strong>tags h</strong> - as tags h são utilizadas como títulos e subtítulos de nossa página, indo desde a tag h1, que gera texto de tamanho maior (normalmente título de maior destaque), até a tag h6, de tamanho menor, marcando subtítulos menos relevantes ou seções na página.</li>
+            <li><strong>tag p</strong> - a tag p serve para delimitar como um parágrafo todo texto colocado entre sua abertura e seu fechamento.</li>
+            <li><strong>tag blockquote</strong> - a tag blockquote serve para destacar, em forma de citação o texto que vier entre sua abertura e fechamento, apresentando uma formatação textual própria.</li>
+            <li><strong> tag u</strong> - <u>esta tag formata o texto para sublinhado, como esta frase exemplifica.</u></li>
+            <li><strong>tag sup</strong> - esta tag coloca o texto acima da linha <sup> como obsevável nestas palavras</sup>.</li>
+        </ol>
+    </p>
+
+    <h3 id="listas"> Aula 07 - Listas Ordenadas e Não Ordenadas</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        Existem três tipos de listas em HTML, as listas ordenadas, as listas não ordenadas e as listas de definição.
+    </p>
+    <p>
+        As listas ordenadas servem para criarmos listas enumeradas, enquanto que as não ordenadas geram listas marcadas por símbolos, ao invés de ordem numérica. Para criarmos uma lista ordenada utilizamos a tag ol e para criarmos os itens da lista utilizamos a tag li aninhada entre a tag ol de abertura e fechamento. Para a lista não ordenada utilizamos a tag ul para abertura e fechamento e aninhada entre elas utilizamos a tag li para os itens da lista, abrindo e fechando a tag para cada item da lista. Ao longo das aulas aqui descritas, utilizamos por diversas vezes as listas, ordernadas e não ordenadas, elas podem ser observadas nas aulas anteriores.
+    </p>
+    <p> O terceiro tipo são as listas de definição, que utlizamos para delimitar um glossário, para que possamos listar termos e seus significados, utilizamos a tag dl para abertura e fechamento, utilizamos a tag dt para nomear o termo que será explicado e por fim a tag dd para o significado do termo. Abaixo, um exemplo deste tipo de lista:
+        <dl>
+            <dt>HTML</dt>
+            <dd>HTML é a linguagem de marcação de textos utilizada para exibir textos como páginas na Internet.</dd>
+            <dt>Navegador</dt>
+            <dd>Navegador é o software que requisita um documento HTML através do protocolo http e exibe seu conteúdo em uma janela.</dd>
+        </dl>
+    </p>
+
+    <h3 id="links"> Aula 08 - Links</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        Para navergamos na internet de uma página para outra, normalmente clicamos em links nas páginas, mas como esses links são gerados? Através da tag a em conjunto com o atributo href, ao passarmos o link do documento que desejamos acessar para o atributo href, passamos a ter um elemento clicável que nos direcionará para outra página. Nesta tag adicionamos um texto, onde efetivamente clicaremos para acessar a página do link referenciado no atributo href.
+    </p>
+    <p>
+        Um dos atributos possíves da tag a é o target, onde podemos utilziar o nome _blank, permitindo que a partir do nosso clique a página seja aberta em outra janela/guia. Podemos também utilizar a tag para navegarmos nosso próprio site, bastando utilizar no atributo href o nome de nosso outro arquivo.
+    </p>
+    <p>
+        Podemos por fim, utilizar a tag a para navegarmos em nossa própria página, criando referências nas tags com o atributo id e as referenciando no href no formato #nome-do-seu-id-de-referencia. Nesta página criada há diversas ancoragens para facilitar a navegação por cliques, levando a aulas específicas ou ao início com apenas um clique.
+    </p>
+    <h3 id="referencias"> Referências bibliográficas</h3>
+    <small><a href="#indice">Índice</a></small>
+    <p>
+        <a target="_blank" href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/a6c501f1-c8f1-41b0-ac09-9f30e79fcd01?back=/track/ntt-data-diversidade-em-tech&tab=undefined&moduleId=undefined">DIO.me/HTML</a>
+    </p>
+    <p>
+        <a target="_blank" href="https://www.w3schools.com/html/">W3schools</a>
+    </p>
+    <p>
+        <a target="_blank" href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Curso em vídeo</a>
+    </p>
+    <p>
+        <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Mozilla-developer-HTML</a>
+    </p>
+    
+</body>
+</html>
