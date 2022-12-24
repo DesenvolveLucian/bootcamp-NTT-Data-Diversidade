@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Desafio HTML - NTT Data Diversidade em Tech</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        table {
+            border: solid #D7BDE2 1px;
+        }
+
+        table thead th {
+            background-color: #D7BDE2 ;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: #D7BDE2
+        }
+
+        table tbody tr:hover td {
+            background-color: rgb(113, 13, 113);
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <br>
+                <li><a href="sobre.html">Um pouco sobre nós</a></li>
+                <br>
+                <li><a href="atendimento.html">Agende sua consulta</a></li>
+                <br>
+                <li><a href="contato.html">Entre em contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img class="background" src="saude_violeta3.svg" height="154" width="986">
+            </div>
+    
+            <div class="content">
+                <h1><font color="#9B59B6">Horário de atendimento</font></h1>
+                <table summary="Esta é a tabela de horários de antedimento do centro de saúde" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th title="Especialidades médicas">Serviços</th>
+                            <th title="Dias úteis">Segunda a Sexta</th>
+                            <th title="Fim de semana">Sábados</th>
+                            <th title="Feriados">Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínica Geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Preços</th>
+                            <td>R$ 130,00</td>
+                            <td>R$ 200,00</td>
+                            <td>R$ 300,00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+    
+            <div class="footer">
+                <h2><font color="#9B59B6">Endereço e contato</font></h2>
+                <p>
+                    <ul style="background-color:#D7BDE2">
+                        <font face="helvetica">
+                            <li>Rua Dr. José Maria de Mello Costa, 50, Ano Bom - Barra Mansa/RJ</li>
+                            <li>Telefone / WhatsApp(24): 99870-7563</li>
+                            <li> <a href="mailto:saudevioleta@gmail.com">saudevioleta@gmail.com</a></li>
+                        </font>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
